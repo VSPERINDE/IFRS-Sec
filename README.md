@@ -1,11 +1,13 @@
 # IFRS-Sec
 
-Run criptografia_cesar.py
+Rodar o programa conforme exemplo abaixo
 
-Pedirá chave de deslocamento que deve ser númerica inteira
+python cripto_sub.py --key=1 -e -ma
 
-Logo após pedirá uma série de confirmações:
+Parametros abaixo para referência
 
--- E ou D para (encriptar ou decriptar)
--- V ou F para dividir ou não o texto em blocos
--- M ou N para manter ou não caracteres especiais
+"-k", "--key", help="Chave para encriptar / decriptar", type=int
+"-e", "--encriptar"
+"-d", "--decriptar"
+"-b", "--bloco", help="transformar texto em bloco de 5 carácteres"
+"-ma", "--manter-char", help="manter char não alfabético"
